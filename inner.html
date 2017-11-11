@@ -30,8 +30,8 @@
       <h3 class="visually-hidden">Фильтры</h3>
       <form class="filter" action="#" method="get">
         <div class="price-filter">
-          <label class="filter-label" for="price">Стоимость:</label><br>
-          <input type="range" name="price-range" id="price" min="0" max="15000"><br>
+          <label class="filter-label" for="price-filter">Стоимость:</label><br>
+          <input type="range" name="price-range" id="price-filter" min="0" max="15000"><br>
           <p>от <output name="pricemin">0</output> до <output name="pricemax">15000</output></p>
         </div>
         <div class="grid-filter">
@@ -78,7 +78,32 @@
     <section class="main-content">
       <div class="sort">
         <h3 class="visually-hidden">Сортировка</h3>
-        <form class="sort">Сортировать:</form>
+        <form class="sort">Сортировать:
+          <div class="sort-left">
+            <p>
+              <label for="price-sort">По цене</label>
+              <input type="radio" name="price" id="price-sort" value="По цене" checked>
+            </p>
+            <p>
+              <label for="type-sort">По типу</label>
+              <input type="radio" name="type" id="type-sort" value="По типу">
+            </p>
+            <p>
+              <label for="name-sort">По названию</label>
+              <input type="radio" name="name" id="name-sort" value="По названию">
+            </p>
+          </div>
+          <div class="sort-right">
+            <p>
+              <label for="ascending">По возрастанию</label>
+              <input type="radio" name="ascending-order" id="ascending" value="По возрастанию" checked>
+            </p>
+            <p>
+              <label for="descending">По убыванию</label>
+              <input type="radio" name="descending-order" id="descending" value="По убыванию">
+            </p>
+          </div>
+        </form>
       </div>
       <div class="web-templates-item">
         <img class="web-templates-image" src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
