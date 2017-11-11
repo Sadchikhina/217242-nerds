@@ -28,11 +28,12 @@
     <h2 class="visually-hidden">Наши макеты</h2>
     <aside class="left-column">
       <h3 class="visually-hidden">Фильтры</h3>
+      <!-- в форме должна быть формула для output, но в курсах не объясняется тольком, как -->
       <form class="filter" action="#" method="get">
         <div class="price-filter">
-          <label class="filter-label" for="price">Стоимость:</label>
-          <input type="range" name="price-range" id="price" min="0" max="15000">
-          от <output name="pricemin">0</output> до <output name="pricemax">15000</output>
+          <label class="filter-label" for="price">Стоимость:</label><br>
+          <input type="range" name="price-range" id="price" min="0" max="15000"><br>
+          <p>от <output name="pricemin">0</output> до <output name="pricemax">15000</output></p>
         </div>
         <div class="grid-filter">
           <label class="filter-label">Сетка:</label>
@@ -71,13 +72,8 @@
             <input type="checkbox" name="feature-cart" id="cart">
             <label for="cart">Корзина</label>
           </p>
-
-
         </div>
-
-
-
-
+        <button type="submit">Показать</button>
       </form>
     </aside>
     <section class="main-content">
