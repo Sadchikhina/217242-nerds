@@ -29,12 +29,52 @@
     <aside class="left-column">
       <h3 class="visually-hidden">Фильтры</h3>
       <form class="filter" action="#" method="get">
-        <label for="price">Стоимость:</label>
-        <input type="range" name="price-range" id="price" min="0" max="15000">
-        <label for="grid">Сетка</label>
-        <input type="radio" name="grid-filter" id="grid" value="Адаптивная">
-        <input type="radio" name="grid-filter" id="grid" value="Фиксированная">
-        <input type="radio" name="grid-filter" id="grid" value="Резиновая">
+        <div class="price-filter">
+          <label class="filter-label" for="price">Стоимость:</label>
+          <input type="range" name="price-range" id="price" min="0" max="15000">
+          от <output name="pricemin">0</output> до <output name="pricemax">15000</output>
+        </div>
+        <div class="grid-filter">
+          <label class="filter-label">Сетка:</label>
+          <p>
+            <input type="radio" name="grid" id="adaptive" value="Адаптивная" checked>
+            <label for="adaptive">Адаптивная</label>
+          </p>
+          <p>
+            <input type="radio" name="grid" id="fix" value="Фиксированная">
+            <label for="fix">Фиксированная</label>
+          </p>
+          <p>
+            <input type="radio" name="grid" id="rubber" value="Резиновая">
+            <label for="rubber">Резиновая</label>
+          </p>
+        </div>
+        <div class="features-filter">
+          <label class="filter-label">Особенности:</label>
+          <p>
+            <input type="checkbox" name="feature-slider" id="slider" checked>
+            <label for="slider">Слайдер</label>
+          </p>
+          <p>
+            <input type="checkbox" name="feature-adventage" id="adventage">
+            <label for="adventage">Блок преимуществ</label>
+          </p>
+          <p>
+            <input type="checkbox" name="feature-news" id="news" checked>
+            <label for="news">Новости</label>
+          </p>
+          <p>
+            <input type="checkbox" name="feature-gallery" id="gallery">
+            <label for="gallery">Галерея</label>
+          </p>
+          <p>
+            <input type="checkbox" name="feature-cart" id="cart">
+            <label for="cart">Корзина</label>
+          </p>
+
+
+        </div>
+
 
 
 
