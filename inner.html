@@ -28,7 +28,6 @@
     <h2 class="visually-hidden">Наши макеты</h2>
     <aside class="left-column">
       <h3 class="visually-hidden">Фильтры</h3>
-      <!-- в форме должна быть формула для output, но в курсах не объясняется тольком, как -->
       <form class="filter" action="#" method="get">
         <div class="price-filter">
           <label class="filter-label" for="price">Стоимость:</label><br>
@@ -73,7 +72,7 @@
             <label for="cart">Корзина</label>
           </p>
         </div>
-        <button type="submit">Показать</button>
+        <button type="submit" name="show">Показать</button>
       </form>
     </aside>
     <section class="main-content">
@@ -131,8 +130,27 @@
       <div class="adress">
         <h4>Nerd's design studio</h4>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <span class="phone" aria-label="Телефон">+7(918)275-75-75</span>
+        <span class="phone" aria-label="Телефон">+7(918)275-75-75</span><br>
+        <button type="button" name="write-us">Напишите нам</button>
       </div>
+      <form class="modal-window" action="index.html" method="post">
+        <label class="modal-window-label">Напишите нам</label>
+        <div class="half-width">
+          <p>
+            <label for="name">Ваше имя:</label><br>
+            <input type="text" name="yourname" id="name" placeholder="Представьтесь, пожалуйста">
+          </p>
+          <p>
+            <label for="email">Ваш e-mail:</label><br>
+            <input type="email" name="youremail" id="email" placeholder="Для отправки ответа">
+          </p>
+        </div>
+        <div class="full-width">
+          <label for="comment">Текст письма:</label>
+          <textarea name="commentfield" id="comment" rows="4" cols="60" placeholder="В свободной форме"></textarea>
+        </div>
+        <button type="submit" name="submit-button">Отправить</button>
+      </form>
     </section>
     <section class="social">
       <h5 class="visually-hidden">Мы в социальных сетях</h5>
