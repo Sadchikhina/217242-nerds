@@ -28,7 +28,17 @@
     <h2 class="visually-hidden">Наши макеты</h2>
     <aside class="left-column">
       <h3 class="visually-hidden">Фильтры</h3>
-      <form class="filter">Фильтры</form>
+      <form class="filter" action="#" method="get">
+        <label for="price">Стоимость:</label>
+        <input type="range" name="price-range" id="price" min="0" max="15000">
+        <label for="grid">Сетка</label>
+        <input type="radio" name="grid-filter" id="grid" value="Адаптивная">
+        <input type="radio" name="grid-filter" id="grid" value="Фиксированная">
+        <input type="radio" name="grid-filter" id="grid" value="Резиновая">
+
+
+
+      </form>
     </aside>
     <section class="main-content">
       <div class="sort">
@@ -85,7 +95,7 @@
       <div class="adress">
         <h4>Nerd's design studio</h4>
         <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <span class="phone">+7(918)275-75-75</span>
+        <span class="phone" aria-label="Телефон">+7(918)275-75-75</span>
       </div>
     </section>
     <section class="social">
