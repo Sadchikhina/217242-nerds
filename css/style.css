@@ -1,1 +1,64 @@
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 16px;
+  color: #000000;
+}
 
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.button {
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.main-header {
+  background-color: #ececec;
+}
+
+.main-navigation-wrapper {
+  text-transform: uppercase;
+}
+
+.slider b {
+  font-size: 55px;
+}
+
+.service-item h2 {
+  font-size: 24 px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.project-development b {
+  font-size: 45px;
+}
+
+.project-development h3,
+.stats h3 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.stats-item b {
+  font-size: 45px;
+}
+
+.adress h5 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
