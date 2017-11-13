@@ -30,8 +30,9 @@
       <h3 class="visually-hidden">Фильтры</h3>
       <form class="filter" action="#" method="get">
         <div class="price-filter">
-          <label class="filter-label" for="price-filter">Стоимость:</label><br>
-          <input type="range" name="price-range" id="price-filter" min="0" max="15000"><br>
+          <div class="price-filter-line"></div>
+            <span class="handle-min"></span>
+            <span class="handle-max"></span>
           <p>от <output name="pricemin">0</output> до <output name="pricemax">15000</output></p>
         </div>
         <div class="grid-filter">
