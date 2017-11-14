@@ -3,12 +3,8 @@ body {
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 400;
   color: #000000;
-
-}
-
-a {
-  text-decoration: none;
 }
 
 .visually-hidden {
@@ -19,31 +15,31 @@ a {
   margin: -1px;
 }
 
-li {
-  list-style-type: none;
-}
-
-.main-navigation-wrapper a {
-  line-height: 30px;
-}
-
-.button,
-button {
-  text-transform: uppercase;
-  line-height: 18px;
-}
-
 .main-header {
   background-color: #ececec;
 }
 
-.main-navigation-wrapper {
+.main-navigation-wrapper a {
+  line-height: 30px;
+  font-weight: 500;
   text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+.button,
+button {
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .slider b {
   font-size: 55px;
   line-height: 55px;
+  font-weight: 500;
 }
 
 .slider p {
@@ -52,30 +48,33 @@ button {
 
 .service-item h2 {
   font-size: 24px;
-  text-transform: uppercase;
-  font-weight: bold;
   line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .project-development b {
   font-size: 45px;
   line-height: 45px;
+  font-weight: 500;
 }
 
 .project-development h3,
 .stats h3 {
+  font-weight: 700;
   text-transform: uppercase;
-  font-weight: bold;
 }
 
 .stats-item b {
   font-size: 45px;
   line-height: 10px;
+  font-weight: 700;
 }
 
 .percent {
   font-size: 45px;
   line-height: 10px;
+  font-weight: 700;
   vertical-align: super;
 }
 
@@ -129,8 +128,8 @@ button {
 .adress h5 {
   font-size: 18px;
   line-height: 30px;
+  font-weight: 700;
   text-transform: uppercase;
-  font-weight: bold;
 }
 
 .adress p {
@@ -140,17 +139,23 @@ button {
 .modal-window-label {
   font-size: 45px;
   line-height: 45px;
+  font-weight: 500;
 }
 
 .half-width label,
 .full-width label {
   line-height: 18px;
-  font-weight: bold;
+  font-weight: 700;
+}
+
+.close-button {
+  color: #fecccd;
 }
 
 .letsbefriends {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 700;
 }
 
 .social p {
