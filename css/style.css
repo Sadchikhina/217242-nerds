@@ -19,6 +19,14 @@ body {
   background-color: #ececec;
 }
 
+.site-navigation,
+.user-navigation,
+.stats-list,
+.partners-list,
+.social-list {
+  list-style-type: none;
+}
+
 .main-navigation-wrapper a {
   line-height: 30px;
   font-weight: 500;
@@ -36,7 +44,7 @@ button {
   text-decoration: none;
 }
 
-.slider b {
+.slider-label {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -53,7 +61,7 @@ button {
   text-transform: uppercase;
 }
 
-.project-development b {
+.statement {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
