@@ -3,18 +3,11 @@ body {
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
   color: #000000;
+  line-height: 24px;
 }
 
 a {
   text-decoration: none;
-}
-
-li {
-  list-style-type: none;
-}
-
-.button {
-  text-transform: uppercase;
 }
 
 .visually-hidden {
@@ -23,6 +16,19 @@ li {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.main-navigation-wrapper a {
+  line-height: 30px;
+}
+
+.button {
+  text-transform: uppercase;
+  line-height: 18px;
 }
 
 .main-header {
@@ -35,16 +41,23 @@ li {
 
 .slider b {
   font-size: 55px;
+  line-height: 55px;
+}
+
+.slider p {
+  line-height: 55px;
 }
 
 .service-item h2 {
-  font-size: 24 px;
+  font-size: 24px;
   text-transform: uppercase;
   font-weight: bold;
+  line-height: 30px;
 }
 
 .project-development b {
   font-size: 45px;
+  line-height: 45px;
 }
 
 .project-development h3,
@@ -55,10 +68,44 @@ li {
 
 .stats-item b {
   font-size: 45px;
+  line-height: 10px;
+}
+
+.percent {
+  font-size: 45px;
+  line-height: 10px;
+  vertical-align: super;
+}
+
+.stats-text {
+  line-height: 18px;
 }
 
 .adress h5 {
   font-size: 18px;
+  line-height: 30px;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.adress p {
+  line-height: 18px;
+}
+
+.modal-window-label {
+  font-size: 45px;
+  line-height: 45px;
+}
+
+.half-width label {
+  line-height: 18px;
+}
+
+.letsbefriends {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.social p {
+  line-height: 22px;
 }
