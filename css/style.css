@@ -2,8 +2,9 @@ body {
   background-color: #ffffff;
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
-  color: #000000;
   line-height: 24px;
+  color: #000000;
+
 }
 
 a {
@@ -26,7 +27,8 @@ li {
   line-height: 30px;
 }
 
-.button {
+.button,
+button {
   text-transform: uppercase;
   line-height: 18px;
 }
@@ -81,6 +83,49 @@ li {
   line-height: 18px;
 }
 
+.main-header h1 {
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.price-filter p {
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.filter-label {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.grid-filter p {
+  line-height: 20px;
+}
+
+.sort p {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.web-templates-item a {
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.web-templates-item p {
+  line-height: 18px;
+}
+
+.paginator {
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
 .adress h5 {
   font-size: 18px;
   line-height: 30px;
@@ -97,8 +142,10 @@ li {
   line-height: 45px;
 }
 
-.half-width label {
+.half-width label,
+.full-width label {
   line-height: 18px;
+  font-weight: bold;
 }
 
 .letsbefriends {
