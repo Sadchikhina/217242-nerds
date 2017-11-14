@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:500" rel="stylesheet">
     <meta name="keywords" content="">
     <meta name="description" content="">
   </head>
@@ -30,7 +33,7 @@
       <h3 class="visually-hidden">Фильтры</h3>
       <form class="filter" action="#" method="get">
         <div class="price-filter">
-          <div class="price-filter-line"></div>
+          <div class="price-filter-line"><label class="filter-label">Стоимость:</label></div>
             <span class="price-filter-handle handle-min" tabindex="0"></span>
             <span class="price-filter-handle handle-max" tabindex="0"></span>
           <p>от <input type="number" name="pricemin" value="0"> до <input type="number" name="pricemax" value="15000"></p>
@@ -79,7 +82,7 @@
     <section class="main-content">
       <div class="sort">
         <h3 class="visually-hidden">Сортировка</h3>
-        <form class="sort">Сортировать:
+        <form class="sort"><label class="filter-label">Сортировать:</label>
           <div class="sort-left">
             <p>
               <label for="price-sort">По цене</label>
