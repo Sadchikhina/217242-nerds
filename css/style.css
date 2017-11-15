@@ -61,7 +61,8 @@ button {
 a.red,
 .adress button,
 .modal-window button[type="submit"],
-.web-templates-item .button {
+.web-templates-item .button,
+.social-list a {
   background-color: #fb565a;
 }
 
@@ -69,7 +70,8 @@ a.red,
 a.red:hover,
 .adress button:hover,
 .modal-window button[type="submit"]:hover,
-.web-templates-item .button:hover {
+.web-templates-item .button:hover,
+.social-list a:hover {
   background-color: #e74246;
 }
 
@@ -77,7 +79,8 @@ a.red:hover,
 a.red:active,
 .adress button:active,
 .modal-window button[type="submit"]:active,
-.web-templates-item .button:active {
+.web-templates-item .button:active,
+.social-list a:active {
   color: #e37376;
   background-color: #d7373b;
 }
