@@ -27,12 +27,24 @@ body {
   list-style-type: none;
 }
 
+<!-- .header-logo:active {
+  color: rgba(255,255,255,0.5);
+} -->
+
 .main-navigation-wrapper a {
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+}
+
+.main-navigation-wrapper a:hover {
+  color: #fb565a;
+}
+
+.main-navigation-wrapper a:active {
+  color: #a6a6a6;
 }
 
 .button,
@@ -42,6 +54,58 @@ button {
   text-transform: uppercase;
   color: #ffffff;
   text-decoration: none;
+
+}
+
+.slider .button,
+a.red,
+.adress button,
+.modal-window button[type="submit"],
+.web-templates-item .button {
+  background-color: #fb565a;
+}
+
+.slider .button:hover,
+a.red:hover,
+.adress button:hover,
+.modal-window button[type="submit"]:hover,
+.web-templates-item .button:hover {
+  background-color: #e74246;
+}
+
+.slider .button:active,
+a.red:active,
+.adress button:active,
+.modal-window button[type="submit"]:active,
+.web-templates-item .button:active {
+  color: #e37376;
+  background-color: #d7373b;
+}
+
+a.green {
+  background-color: #00ca74;
+}
+
+a.green:hover {
+  background-color: #00bc6c;
+}
+
+a.green:active {
+  color: #4dc491;
+  background-color: #00aa62;
+}
+
+a.yellow {
+  background-color: #efc84a;
+}
+
+a.yellow:hover {
+  background-color: #eab534;
+}
+
+a.yellow:active {
+  color: #edc265;
+  background-color: #e5a722;
 }
 
 .slider-label {
