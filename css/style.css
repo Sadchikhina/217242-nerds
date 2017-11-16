@@ -19,6 +19,14 @@ body {
   background-color: #ececec;
 }
 
+.main-header-logo:hover {
+  opacity: 0.8;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
 .site-navigation,
 .user-navigation,
 .stats-list,
@@ -26,10 +34,6 @@ body {
 .social-list {
   list-style-type: none;
 }
-
-<!-- .header-logo:active {
-  color: rgba(255,255,255,0.5);
-} -->
 
 .main-navigation-wrapper a {
   line-height: 30px;
@@ -61,8 +65,7 @@ button {
 a.red,
 .adress button,
 .modal-window button[type="submit"],
-.web-templates-item .button,
-.social-list a {
+.web-templates-item .button {
   background-color: #fb565a;
 }
 
@@ -70,8 +73,7 @@ a.red,
 a.red:hover,
 .adress button:hover,
 .modal-window button[type="submit"]:hover,
-.web-templates-item .button:hover,
-.social-list a:hover {
+.web-templates-item .button:hover {
   background-color: #e74246;
 }
 
@@ -79,8 +81,7 @@ a.red:hover,
 a.red:active,
 .adress button:active,
 .modal-window button[type="submit"]:active,
-.web-templates-item .button:active,
-.social-list a:active {
+.web-templates-item .button:active {
   color: #e37376;
   background-color: #d7373b;
 }
@@ -155,6 +156,18 @@ a.yellow:active {
 
 .stats-text {
   line-height: 18px;
+}
+
+.partners-image {
+  opacity: 0.2;
+}
+
+.partners-image:hover {
+  opacity: 1;
+}
+
+.partners-image:active {
+  opacity: 0.1;
 }
 
 .main-header h1 {
@@ -233,15 +246,42 @@ a.yellow:active {
 }
 
 .close-button {
-  color: #fecccd;
+  color: #fb565a;
+  opacity: 0.3;
+}
+
+.close-button:hover {
+  opacity: 1;
+}
+
+.close-button:active {
+  opacity: 0.1;
+}
+
+.social p {
+  line-height: 22px;
+}
+
+.social-list a {
+  color: #ffffff;
+  background-color: #e1e1e1;
+  text-decoration: none;
+}
+
+.social-list a:hover {
+  color: #ffffff;
+  background-color: #e74246;
+  text-decoration: none;
+}
+
+.social-list a:active {
+  color: #e57b7e;
+  background-color: #d7373b;
+  text-decoration: none;
 }
 
 .letsbefriends {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
-}
-
-.social p {
-  line-height: 22px;
 }
