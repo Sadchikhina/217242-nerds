@@ -188,8 +188,20 @@ a.yellow:active {
   font-weight: 700;
 }
 
-.grid-filter p {
+.grid-filter p,
+.features-filter p {
   line-height: 20px;
+  color: #283136;
+}
+
+.grid-filter p:hover,
+.features-filter p:hover {
+  color: #000000;
+}
+
+.grid-filter p:disabled,
+.features-filter p:disabled {
+  opacity: 0.3;
 }
 
 .left-column button {
@@ -208,10 +220,24 @@ a.yellow:active {
   background-color: #d5d5d5;
 }
 
+.sort input[type="radio"] {
+  display: none;
+}
+
 .sort p {
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  color: #ededed;
+}
+
+.sort p:hover {
+  color: #a6a6a6;
+}
+
+.sort p:active,
+.sort input[type="radio"]:checked + label  {
+  color: #231f20;
 }
 
 .web-templates-item a {
@@ -230,7 +256,7 @@ a.yellow:active {
 .paginator a {
   line-height: 18px;
   text-transform: uppercase;
-  color: #000000;  
+  color: #000000;
   text-decoration: none;
   background-color: #eeeeee;
 }
