@@ -82,7 +82,7 @@ a.red:active,
 .adress button:active,
 .modal-window button[type="submit"]:active,
 .web-templates-item .button:active {
-  color: #e37376;
+  color: #e57b7e;
   background-color: #d7373b;
 }
 
@@ -194,6 +194,18 @@ a.yellow:active {
 
 .left-column button {
   color: #000000;
+  background-color: #eeeeee;
+}
+
+.left-column button:hover,
+.paginator a:hover {
+  background-color: #dfdfdf;
+}
+
+.left-column button:active,
+.paginator a:active {
+  color: #959595;
+  background-color: #d5d5d5;
 }
 
 .sort p {
@@ -218,8 +230,14 @@ a.yellow:active {
 .paginator a {
   line-height: 18px;
   text-transform: uppercase;
-  color: #000000;
+  color: #000000;  
   text-decoration: none;
+  background-color: #eeeeee;
+}
+
+.paginator .disabled {
+  background-color: #ffffff;
+  border: 3px solid #dbdbdb;
 }
 
 .adress h5,
@@ -262,8 +280,14 @@ a.yellow:active {
 .modal-window input:focus,
 .modal-window textarea:focus {
   color: #000000;
-  border-color: #000000;
+  border: 2px solid #000000;
   outline: none;
+}
+
+.modal-window input:invalid,
+.modal-window textarea:invalid {
+  color: #e74246;
+  border: 2px solid #e74246;
 }
 
 .social p {
@@ -283,7 +307,7 @@ a.yellow:active {
 }
 
 .social-list a:active {
-  color: #e57b7e;
+  opacity: 0.3;
   background-color: #d7373b;
   text-decoration: none;
 }
