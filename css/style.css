@@ -89,7 +89,7 @@ a.red:active,
 .web-templates-item .button:active {
   color: #e57b7e;
   background-color: #d7373b;
-  box-shadow: inset 0 4px 0 0 #c13135;
+  box-shadow: inset 0 3px 0 0 #c13135;
 }
 
 a.green {
@@ -103,7 +103,7 @@ a.green:hover {
 a.green:active {
   color: #4dc491;
   background-color: #00aa62;
-  box-shadow: inset 0 4px 0 0 #009958;
+  box-shadow: inset 0 3px 0 0 #009958;
 }
 
 a.yellow {
@@ -117,7 +117,7 @@ a.yellow:hover {
 a.yellow:active {
   color: #edc265;
   background-color: #e5a722;
-  box-shadow: inset 0 4px 0 0 #ce961f;
+  box-shadow: inset 0 3px 0 0 #ce961f;
 }
 
 .slider-label {
