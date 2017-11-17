@@ -169,11 +169,17 @@ a.yellow:active {
   opacity: 0.2;
 }
 
-.partners-image:hover {
+.htmlacademy:hover,
+.borodinski:hover,
+.pink:hover,
+.mishka:hover {
   opacity: 1;
 }
 
-.partners-image:active {
+.htmlacademy:active,
+.borodinski:active,
+.pink:active,
+.mishka:hover {
   opacity: 0.1;
 }
 
