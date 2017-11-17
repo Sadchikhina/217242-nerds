@@ -237,7 +237,7 @@ a.yellow:active {
 .paginator a:active {
   color: #959595;
   background-color: #d5d5d5;
-  box-shadow: inset 0 4px 0 0 #bfbfbf;
+  box-shadow: inset 0 3px 0 0 #bfbfbf;
 }
 
 .sort input[type="radio"] {
