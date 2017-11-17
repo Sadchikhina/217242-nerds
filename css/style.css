@@ -51,6 +51,10 @@ body {
   color: #a6a6a6;
 }
 
+.main-navigation-wrapper .active {
+  box-shadow: 0 2px 0 0 #fb565a;
+}
+
 .button,
 button {
   line-height: 18px;
