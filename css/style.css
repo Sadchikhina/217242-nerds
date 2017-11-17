@@ -202,8 +202,9 @@ a.yellow:active {
   font-weight: 700;
 }
 
-.price-filter-line input[type="number"] {
+.price-filter input[type="number"] {
   background-color: #eeeeee;
+  border: none;
 }
 
 .grid-filter p,
