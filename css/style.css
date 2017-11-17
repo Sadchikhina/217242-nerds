@@ -323,11 +323,13 @@ a.yellow:active {
   outline: none;
 }
 
+/* неправильные значения инпутов
 .modal-window input:invalid,
 .modal-window textarea:invalid {
   color: #e74246;
   border: 2px solid #e74246;
 }
+*/
 
 .social p {
   line-height: 22px;
