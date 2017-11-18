@@ -166,7 +166,11 @@ a.yellow:active {
   line-height: 18px;
 }
 
-.partners-image {
+.htmlacademy,
+.borodinski,
+.pink,
+.mishka
+ {
   opacity: 0.2;
 }
 
@@ -180,7 +184,7 @@ a.yellow:active {
 .htmlacademy:active,
 .borodinski:active,
 .pink:active,
-.mishka:hover {
+.mishka:active {
   opacity: 0.1;
 }
 
@@ -321,6 +325,11 @@ a.yellow:active {
 
 .close-button:active {
   opacity: 0.1;
+}
+
+.modal-window input:hover,
+.modal-window textarea:hover {
+  border: 2px solid #b4b9bb;
 }
 
 .modal-window input:focus,
