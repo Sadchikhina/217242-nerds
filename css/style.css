@@ -203,6 +203,26 @@ a.yellow:active {
   border-radius: 2px;
 }
 
+.main-index {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.services {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding-bottom: 80px;
+  box-shadow: 0 2px 0 0 #eeeeee;
+}
+
+.service-item {
+  width: 300px;
+  margin-right: 100px;
+}
+
 .service-item h2 {
   font-size: 24px;
   line-height: 30px;
@@ -210,10 +230,37 @@ a.yellow:active {
   text-transform: uppercase;
 }
 
+.service-item .button {
+  display: flex;
+  box-sizing: border-box;
+  width: 160px;
+  height: 50px;
+  padding-left: 40px;
+  padding-top: 17px;
+  border-radius: 2px;
+}
+
+.principles {
+  display: flex;
+  justify-content: space-between;
+}
+
 .statement {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
+}
+
+.project-development {
+  margin-right: 90px;
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 700px;
+  outline: 1px solid #666;
 }
 
 .project-development h3,
