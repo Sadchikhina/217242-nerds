@@ -243,6 +243,8 @@ a.yellow:active {
 .principles {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 80px;
+  box-shadow: 0 2px 0 0 #eeeeee;
 }
 
 .statement {
@@ -252,15 +254,39 @@ a.yellow:active {
 }
 
 .project-development {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   margin-right: 90px;
+  outline: 1px solid #666;
+}
+
+.project-development-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-development-item {
+  padding-bottom: 10px;
+}
+
+.project-development-item:last-child {
+  padding-bottom: 0;
 }
 
 .stats {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 700px;
   outline: 1px solid #666;
+}
+
+.stats-list {
+  display: flex;
+}
+
+.stats-item {
+  margin-right: 25px;
 }
 
 .project-development h3,
@@ -283,7 +309,17 @@ a.yellow:active {
 }
 
 .stats-text {
+  display: flex;
   line-height: 18px;
+}
+
+.partners-list {
+  display: flex;
+  justify-content: space-around;
+  box-shadow: 0 2px 0 0 #eeeeee;
+  outline: 1px solid #666;
+  margin: 0;
+  margin-bottom: 80px;
 }
 
 .htmlacademy,
