@@ -159,32 +159,35 @@ a.yellow:active {
     justify-content: flex-start;
 }
 
-.slide1-text {
+.slide2 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.slide3 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.slide-text {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     box-sizing: border-box;
-
     outline: 1px solid #666;
-}
-
-.slide1 .slider-label {
-  padding-top: 80px;
-  padding-bottom: 5px;
-}
-
-.slide1 p {
-  padding-bottom: 25px;
 }
 
 .slider-label {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
+  padding-top: 80px;
+  padding-bottom: 5px;
 }
 
 .slider p {
   line-height: 24px;
+  padding-bottom: 25px;
 }
 
 .slider .button {
@@ -193,7 +196,7 @@ a.yellow:active {
   height: 50px;
   padding-left: 50px;
   padding-top: 17px;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .service-item h2 {
