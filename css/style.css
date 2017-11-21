@@ -38,28 +38,28 @@ body {
 
 .main-navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   width: 1160px;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 35px;
   padding-top: 50px;
   outline: 1px solid #666;
 }
 
+.header-logo {
+  margin-right: 200px;
+}
+
 .site-navigation {
   display: flex;
+  justify-content: space-between;
   width: 440px;
-  justify-content: space-around;
+  margin-right: 280px;
   outline: 1px solid #666;
 }
 
 .user-navigation {
   outline: 1px solid #666;
-}
-
-.slider {
-  display: flex;
 }
 
 .main-navigation a {
@@ -148,6 +148,35 @@ a.yellow:active {
   box-shadow: inset 0 3px 0 0 #ce961f;
 }
 
+.slider {
+  width: 1160px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.slide1 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.slide1-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    box-sizing: border-box;
+
+    outline: 1px solid #666;
+}
+
+.slide1 .slider-label {
+  padding-top: 80px;
+  padding-bottom: 5px;
+}
+
+.slide1 p {
+  padding-bottom: 25px;
+}
+
 .slider-label {
   font-size: 55px;
   line-height: 55px;
@@ -155,7 +184,16 @@ a.yellow:active {
 }
 
 .slider p {
-  line-height: 55px;
+  line-height: 24px;
+}
+
+.slider .button {
+  box-sizing: border-box;
+  width: 240px;
+  height: 50px;
+  padding-left: 50px;
+  padding-top: 17px;
+  border-radius: 5px;
 }
 
 .service-item h2 {
