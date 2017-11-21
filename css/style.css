@@ -155,25 +155,29 @@ a.yellow:active {
 }
 
 .slide1 {
-    display: flex;
-    justify-content: flex-start;
+  background-image: url('../img/nerds-index-slide1.png');
+  background-position: right center;
+  background-repeat: no-repeat;
 }
 
 .slide2 {
-    display: flex;
-    justify-content: flex-start;
+  background-image: url('../img/nerds-index-slide2.png');
+  background-position: right center;
+  background-repeat: no-repeat;
 }
 
 .slide3 {
-    display: flex;
-    justify-content: flex-start;
+  background-image: url('../img/nerds-index-slide3.png');
+  background-position: right center;
+  background-repeat: no-repeat;
 }
 
 .slide-text {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    box-sizing: border-box;
+    width: 550px;
+    height: 431px;
     outline: 1px solid #666;
 }
 
