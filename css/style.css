@@ -382,6 +382,7 @@ a.yellow:active {
   height: 40px;
   margin-bottom: 60px;
   background-color: #eeeeee;
+  text-align: center;
   border: none;
 }
 
@@ -392,15 +393,10 @@ a.yellow:active {
   margin-top: 55px;
 }
 
-.grid-filter {
-  margin-bottom: 55px;
-}
-
+.grid-filter,
 .features-filter {
   margin-bottom: 55px;
 }
-
-
 
 .grid-filter p,
 .features-filter p {
@@ -440,8 +436,13 @@ a.yellow:active {
   box-shadow: inset 0 3px 0 0 #bfbfbf;
 }
 
+.main-content {
+  width: 760px;
+}
+
 .sort {
   display: flex;
+  justify-content: space-between;
 }
 
 .sort-left,
@@ -469,6 +470,16 @@ a.yellow:active {
   color: #231f20;
 }
 
+.web-templates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.web-templates-item {
+  width: 360px;
+  margin-bottom: 33px;
+}
 
 .web-templates-item a {
   font-size: 18px;
@@ -483,6 +494,16 @@ a.yellow:active {
   line-height: 18px;
 }
 
+.web-templates-item .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 2px;
+
+}
+
 .paginator {
   display: flex;
 }
@@ -490,8 +511,11 @@ a.yellow:active {
 .paginator a {
   box-sizing: border-box;
   display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50px;
   height: 50px;
+  margin-top: 27px;
   margin-bottom: 60px;
   line-height: 18px;
   text-transform: uppercase;
@@ -508,6 +532,11 @@ a.yellow:active {
 .paginator .disabled {
   background-color: #ffffff;
   border: 3px solid #dbdbdb;
+}
+
+.paginator .next {
+  width: 260px;
+  height: 50px;
 }
 
 .map {
