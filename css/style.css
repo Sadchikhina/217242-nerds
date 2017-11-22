@@ -455,7 +455,7 @@ a.yellow:active {
 
 .map-img {
   position: absolute;
-  top: -147px;
+  top: -70px;
   right: 0;
   width: 100%;
   height: auto;
@@ -472,18 +472,19 @@ a.yellow:active {
   justify-content: center;
   align-items: flex-start;
   position: relative;
-  margin-top: 55px;
-  margin-bottom: 55px;
-  padding-left: 50px;
   width: 319px;
   height: 308px;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  margin-left: 135px;
+  padding-left: 50px;
   background-color: #ffffff;
 }
 
 .map-marker {
   position: relative;
-  margin-top: 80px;
-  margin-left: 435px;
+  margin-top: 57px;
+  margin-left: 250px;
 }
 
 .adress h5,
@@ -615,6 +616,13 @@ a.yellow:active {
   margin-right: 135px;
 }
 
+.social-vk,
+.social-fb,
+.social-instagram {
+  display: flex;
+  justify-content: center;
+}
+
 .social p {
   line-height: 22px;
 }
@@ -627,18 +635,6 @@ a.yellow:active {
   border-radius: 100%;
   margin-right: 15px;
   text-decoration: none;
-}
-
-.social-vk {
-  background: url('../img/vk-icon.svg') 50% 50% no-repeat;
-}
-
-.social-fb {
-  background: url('../img/fb-icon.svg') 50% 50% no-repeat;
-}
-
-.social-instagram {
-  background: url('../img/insta-icon.svg') 50% 50% no-repeat;
 }
 
 .social-list a:hover {
