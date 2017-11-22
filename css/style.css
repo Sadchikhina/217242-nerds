@@ -16,6 +16,16 @@ body {
   margin: -1px;
 }
 
+.slider,
+.main-index,
+.map-inner,
+.social,
+.main-catalog {
+  width: 1160px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .main-header {
   background-color: #ececec;
 }
@@ -149,14 +159,7 @@ a.yellow:active {
   box-shadow: inset 0 3px 0 0 #ce961f;
 }
 
-.slider,
-.main-index,
-.map-inner,
-.social {
-  width: 1160px;
-  margin-right: auto;
-  margin-left: auto;
-}
+
 
 .slide1 {
   background-image: url('../img/nerds-index-slide1.png');
@@ -350,9 +353,16 @@ a.yellow:active {
   padding-bottom: 110px;
 }
 
-.price-filter p {
-  line-height: 22px;
-  text-transform: uppercase;
+.main-catalog {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .filter-label {
@@ -362,10 +372,35 @@ a.yellow:active {
   font-weight: 700;
 }
 
+.price-filter p {
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
 .price-filter input[type="number"] {
+  width: 80px;
+  height: 40px;
+  margin-bottom: 60px;
   background-color: #eeeeee;
   border: none;
 }
+
+.price-filter-line {
+  width: 260px;
+  height: 80px;
+  background-color: #eeeeee;
+  margin-top: 55px;
+}
+
+.grid-filter {
+  margin-bottom: 55px;
+}
+
+.features-filter {
+  margin-bottom: 55px;
+}
+
+
 
 .grid-filter p,
 .features-filter p {
@@ -384,6 +419,11 @@ a.yellow:active {
 }
 
 .left-column button {
+  box-sizing: border-box;
+  width: 260px;
+  height: 50px;
+  padding: auto;
+  border-radius: 2px;
   color: #000000;
   background-color: #eeeeee;
 }
@@ -398,6 +438,15 @@ a.yellow:active {
   color: #959595;
   background-color: #d5d5d5;
   box-shadow: inset 0 3px 0 0 #bfbfbf;
+}
+
+.sort {
+  display: flex;
+}
+
+.sort-left,
+.sort-right {
+  display: flex;
 }
 
 .sort input[type="radio"] {
@@ -419,6 +468,7 @@ a.yellow:active {
 .sort input[type="radio"]:checked + label  {
   color: #231f20;
 }
+
 
 .web-templates-item a {
   font-size: 18px;
@@ -638,16 +688,18 @@ a.yellow:active {
 }
 
 .social-list a:hover {
-
   background-color: #e74246;
   text-decoration: none;
 }
 
 .social-list a:active {
-
   background-color: #d7373b;
   box-shadow: inset 0 2px 0 0 #c13135;
   text-decoration: none;
+}
+
+.social-list a:active img {
+  opacity: 0.3;
 }
 
 .letsbefriends {
