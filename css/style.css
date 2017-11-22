@@ -344,7 +344,6 @@ a.yellow:active {
   opacity: 0.1;
 }
 
-
 .main-header h1 {
   font-size: 55px;
   line-height: 55px;
@@ -447,11 +446,30 @@ a.yellow:active {
   border: 3px solid #dbdbdb;
 }
 
+.map {
+  position: relative;
+  margin-bottom: 80px;
+}
+
+.map-img {
+  position: absolute;
+}
+
 .adress {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
+  position: relative;
+  top: 185px;
+  left: 350px;
+  padding-left: 50px;
   width: 319px;
   height: 308px;
-  background-color: #ffffff:
-  top: 500px;
+  background-color: #ffffff;
+  outline: 1px solid #666;
 }
 
 .adress h5,
@@ -460,10 +478,29 @@ a.yellow:active {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
 }
 
 .adress p {
   line-height: 18px;
+}
+
+.adress button {
+  box-sizing: border-box;
+  width: 220px;
+  height: 50px;
+  padding: auto;
+  border-radius: 2px;
+}
+
+.modal-window {
+  box-sizing: border-box;
+  display: flex;
+  width: 960px;
+  height: 590px;
+  background-color: #ffffff;
+  outline: 1px solid #666;
 }
 
 .modal-window-label {
