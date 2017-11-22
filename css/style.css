@@ -148,7 +148,10 @@ a.yellow:active {
   box-shadow: inset 0 3px 0 0 #ce961f;
 }
 
-.slider {
+.slider,
+.main-index,
+.map-inner,
+.social {
   width: 1160px;
   margin-right: auto;
   margin-left: auto;
@@ -201,12 +204,6 @@ a.yellow:active {
   padding-left: 50px;
   padding-top: 17px;
   border-radius: 2px;
-}
-
-.main-index {
-  width: 1160px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .services {
@@ -448,11 +445,21 @@ a.yellow:active {
 
 .map {
   position: relative;
+  overflow: hidden;
+  min-width: 420px;
   margin-bottom: 80px;
 }
 
 .map-img {
   position: absolute;
+  top: -147px;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
+
+.map-inner {
+  display: flex;
 }
 
 .adress {
@@ -461,15 +468,19 @@ a.yellow:active {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  overflow: hidden;
   position: relative;
-  top: 185px;
-  left: 350px;
+  margin-top: 55px;
+  margin-bottom: 55px;
   padding-left: 50px;
   width: 319px;
   height: 308px;
   background-color: #ffffff;
-  outline: 1px solid #666;
+}
+
+.map-marker {
+position: relative;
+top: 80px;
+left: 435px;
 }
 
 .adress h5,
@@ -497,10 +508,16 @@ a.yellow:active {
 .modal-window {
   box-sizing: border-box;
   display: flex;
+  flex-direction: column;
   width: 960px;
   height: 590px;
   background-color: #ffffff;
   outline: 1px solid #666;
+}
+
+.modal-window-header {
+  display: flex;
+  justify-content: space-between;
 }
 
 .modal-window-label {
@@ -516,7 +533,9 @@ a.yellow:active {
 }
 
 .close-button {
-  color: #fb565a;
+  background: url('../img/close-cross.svg') 50% 50% no-repeat;
+  width: 20px;
+  height: 20px;
   opacity: 0.3;
 }
 
