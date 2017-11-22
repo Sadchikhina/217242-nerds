@@ -1,4 +1,5 @@
 body {
+  min-width: 1200px;
   background-color: #ffffff;
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 16px;
@@ -479,8 +480,8 @@ a.yellow:active {
 
 .map-marker {
   position: relative;
-  top: 80px;
-  left: 435px;
+  margin-top: 80px;
+  margin-left: 435px;
 }
 
 .adress h5,
@@ -572,9 +573,7 @@ a.yellow:active {
   height: 120px;
   border-radius: 5px;
   border: 2px solid #d7dcde;
-
 }
-
 
 .send-button {
   box-sizing: border-box;
@@ -605,27 +604,52 @@ a.yellow:active {
 }
 */
 
+.social {
+  display: flex;
+}
+
+.social-list {
+  display: flex;
+  margin-right: 135px;
+}
+
 .social p {
   line-height: 22px;
 }
 
 .social-list a {
-  color: #ffffff;
+  display: flex;
   background-color: #e1e1e1;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  margin-right: 15px;
   text-decoration: none;
 }
 
+.social-vk {
+  background: url('../img/vk-icon.svg') 50% 50% no-repeat;
+}
+
+.social-fb {
+  background: url('../img/fb-icon.svg') 50% 50% no-repeat;
+}
+
+.social-instagram {
+  background: url('../img/insta-icon.svg') 50% 50% no-repeat;
+}
+
 .social-list a:hover {
-  color: #ffffff;
+
   background-color: #e74246;
   text-decoration: none;
 }
 
 .social-list a:active {
-  color: #e37376;
+
   background-color: #d7373b;
-  text-decoration: none;
   box-shadow: inset 0 2px 0 0 #c13135;
+  text-decoration: none;
 }
 
 .letsbefriends {
