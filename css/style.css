@@ -478,8 +478,15 @@ a.yellow:active {
 }
 
 .web-templates-item {
+  position: relative;
+  width: 360px;
+  height: 576px;
   margin-bottom: 33px;
   border: 1px solid #eeeeee;
+}
+
+.web-templates-image{
+  position: absolute;
 }
 
 .web-templates-item a {
@@ -492,10 +499,6 @@ a.yellow:active {
   text-decoration: none;
 }
 
-.web-templates-item p {
-  line-height: 18px;
-}
-
 .template-description {
   box-sizing: border-box;
   display: flex;
@@ -504,9 +507,33 @@ a.yellow:active {
   align-items: center;
   width: 360px;
   height: 230px;
+  position: relative;
+  top: 345px;
   background-color: #eeeeee;
+  display: none;
+}
+
+.template-description::before {
+  content: "";
+  display: block;
+  position: relative;
+  bottom: 369px;
+  width: 360px;
+  height: 40px;
+  background-color: #4d4d4d;
+  border-radius: 2px 2px 0 0;
 
 }
+
+.web-templates-item:hover .template-description {
+  display: flex;
+}
+
+.web-templates-item p {
+  line-height: 18px;
+  text-align: center;
+}
+
 
 .web-templates-item .button {
   display: flex;
