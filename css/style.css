@@ -478,9 +478,9 @@ a.yellow:active {
 }
 
 .map-marker {
-position: relative;
-top: 80px;
-left: 435px;
+  position: relative;
+  top: 80px;
+  left: 435px;
 }
 
 .adress h5,
@@ -509,10 +509,14 @@ left: 435px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   width: 960px;
   height: 590px;
+  padding: 75px 100px 85px 100px;
   background-color: #ffffff;
-  outline: 1px solid #666;
+  box-shadow: 0 20px 100px 0 #000101;
+  margin-left: 100px;
+  display: none;
 }
 
 .modal-window-header {
@@ -524,12 +528,6 @@ left: 435px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
-}
-
-.half-width label,
-.full-width label {
-  line-height: 18px;
-  font-weight: 700;
 }
 
 .close-button {
@@ -547,6 +545,45 @@ left: 435px;
   opacity: 0.1;
 }
 
+.half-width {
+  display: flex;
+  justify-content: space-between;
+}
+
+.half-width label,
+.full-width label {
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.half-width input {
+  box-sizing: border-box;
+  padding-left: 20px;
+  width: 360px;
+  height: 50px;
+  border-radius: 5px;
+  border: 2px solid #d7dcde;
+}
+
+.full-width textarea {
+  box-sizing: border-box;
+  padding-left: 20px;
+  width: 760px;
+  height: 120px;
+  border-radius: 5px;
+  border: 2px solid #d7dcde;
+
+}
+
+
+.send-button {
+  box-sizing: border-box;
+  width: 260px;
+  height: 50px;
+  padding: auto;
+  border-radius: 2px;
+}
+
 .modal-window input:hover,
 .modal-window textarea:hover {
   border: 2px solid #b4b9bb;
@@ -558,6 +595,7 @@ left: 435px;
   border: 2px solid #000000;
   outline: none;
 }
+
 
 /* неправильные значения инпутов
 .modal-window input:invalid,
