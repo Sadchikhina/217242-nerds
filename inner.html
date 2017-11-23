@@ -16,7 +16,7 @@
           <ul class="site-navigation">
             <li><a class="studio" href="#" aria-label="Студия">Студия</a></li>
             <li><a class="clients" href="#" aria-label="Клиенты">Клиенты</a></li>
-            <li><a class="shop" href="inner.html" aria-label="Магазин">Магазин</a></li>
+            <li class="active"><a class="shop" href="inner.html" aria-label="Магазин">Магазин</a></li>
             <li><a class="contacts" href="#" aria-label="Контакты">Контакты</a></li>
           </ul>
           <ul class="user-navigation">
@@ -30,8 +30,8 @@
       <aside class="left-column">
         <h3 class="visually-hidden">Фильтры</h3>
         <form class="filter" action="#" method="get">
+          <label class="filter-label">Стоимость:</label>
           <div class="price-filter">
-            <label class="filter-label">Стоимость:</label>
             <div class="price-filter-line"></div>
               <span class="price-filter-handle handle-min" tabindex="0"></span>
               <span class="price-filter-handle handle-max" tabindex="0"></span>
@@ -81,7 +81,8 @@
       <section class="main-content">
         <div class="sort-filter">
           <h3 class="visually-hidden">Сортировка</h3>
-          <form class="sort"><label class="filter-label">Сортировать:</label>
+          <form class="sort">
+            <label class="filter-label">Сортировать:</label>
             <div class="sort-left">
               <p>
                 <input type="radio" name="sort" id="price-sort" value="По цене" checked>
