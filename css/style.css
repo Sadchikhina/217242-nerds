@@ -42,7 +42,8 @@ body {
 .user-navigation,
 .stats-list,
 .partners-list,
-.social-list {
+.social-list,
+.project-development-list {
   list-style-type: none;
   padding: 0;
 }
@@ -246,7 +247,7 @@ a.yellow:active {
   justify-content: flex-start;
   flex-wrap: wrap;
   margin-top: 79px;
-  margin-bottom: 75px;
+  margin-bottom: 42px;
   padding-bottom: 80px;
   box-shadow: 0 2px 0 0 #eeeeee;
 }
@@ -291,6 +292,7 @@ margin-right: 0;
 .principles {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   padding-bottom: 58px;
   box-shadow: 0 2px 0 0 #eeeeee;
 }
@@ -308,6 +310,7 @@ margin-right: 0;
   font-weight: 500;
   padding: 0;
   margin: 0;
+  margin-top: 33px;
   margin-bottom: 33px;
 }
 
@@ -337,31 +340,49 @@ margin-bottom: 8px;
 .stats {
   display: flex;
   flex-direction: column;
+  align-items: flex-end;
   width: 700px;
 }
 
-.stats-list {
-  display: flex;
-}
-
-.stats-item {
-  margin-right: 25px;
+.stats img {
+  margin-bottom: 35px;
 }
 
 .stats h3 {
-  font-size: 15px;
+  font-size: 15.8px;
   font-weight: 700;
   text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-right: 15px;
+  margin-bottom: 32px;
 }
 
-.stats-item b {
+.stats-list {
+  box-sizing: border-box;
+  display: flex;
+}
+
+.stats-item:first-child {
+  padding-left: 24px;
+  padding-right: 9px;
+}
+
+.stats-item:nth-child(2) {
+  padding-right: 9px;
+}
+
+.stats-item p {
   font-size: 45px;
   line-height: 10px;
   font-weight: 700;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 .percent {
-  font-size: 45px;
+  font-size: 30px;
   line-height: 10px;
   font-weight: 700;
   vertical-align: super;
@@ -374,7 +395,7 @@ margin-bottom: 8px;
 
 .partners-list {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   box-shadow: 0 2px 0 0 #eeeeee;
   margin: 0;
   margin-bottom: 80px;
