@@ -58,7 +58,7 @@ body {
 }
 
 .header-logo {
-  margin-right: 203px;
+  margin-right: 201px;
   outline: 1px solid #000;
 }
 
@@ -66,7 +66,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 462px;
+  width: 466px;
   margin-right: 244px;
   outline: 1px solid #000;
 }
@@ -178,7 +178,9 @@ a.yellow:active {
   box-shadow: inset 0 3px 0 0 #ce961f;
 }
 
+
 .slide1 {
+  position: relative;
   background-image: url('../img/nerds-index-slide1.png');
   background-position: right center;
   background-repeat: no-repeat;
@@ -186,12 +188,14 @@ a.yellow:active {
 }
 
 .slide2 {
+  position: relative;
   background-image: url('../img/nerds-index-slide2.png');
   background-position: right center;
   background-repeat: no-repeat;
 }
 
 .slide3 {
+  position: relative;
   background-image: url('../img/nerds-index-slide3.png');
   background-position: right center;
   background-repeat: no-repeat;
@@ -205,24 +209,34 @@ a.yellow:active {
     height: 431px;
 }
 
+.slide-text::after {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #ffffff;
+  border-radius: 100%;
+}
+
 .slider-label {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
-  padding-top: 80px;
-  padding-bottom: 5px;
+  padding-top: 76px;
+  padding-bottom: 10px;
 }
 
 .slider p {
   line-height: 24px;
-  padding-bottom: 25px;
+  padding-bottom: 24px;
+  margin-left: 2px;
 }
 
 .slider .button {
   box-sizing: border-box;
   width: 240px;
   height: 50px;
-  padding-left: 50px;
+  padding-left: 54px;
   padding-top: 17px;
   border-radius: 2px;
 }
@@ -230,15 +244,23 @@ a.yellow:active {
 .services {
   display: flex;
   justify-content: flex-start;
-  margin-top: 80px;
-  margin-bottom: 80px;
+  flex-wrap: wrap;
+  margin-top: 79px;
+  margin-bottom: 75px;
   padding-bottom: 80px;
   box-shadow: 0 2px 0 0 #eeeeee;
 }
 
 .service-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 300px;
   margin-right: 100px;
+}
+
+.service-item:last-child {
+margin-right: 0;
 }
 
 .service-item h2 {
@@ -246,6 +268,13 @@ a.yellow:active {
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
+  margin: 0;
+  margin-top: 24px;
+}
+
+.service-item p {
+  margin: 0;
+  margin-top: 17px;
 }
 
 .service-item .button {
@@ -253,42 +282,56 @@ a.yellow:active {
   box-sizing: border-box;
   width: 160px;
   height: 50px;
+  border-radius: 2px;
   padding-left: 40px;
   padding-top: 17px;
-  border-radius: 2px;
+  margin-top: 32px;
 }
 
 .principles {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 80px;
+  padding-bottom: 58px;
   box-shadow: 0 2px 0 0 #eeeeee;
+}
+
+.project-development {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 90px;
 }
 
 .statement {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 33px;
 }
 
-.project-development {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  margin-right: 90px;
+.project-development p {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 39px;
 }
 
-.project-development-list {
-  display: flex;
-  flex-direction: column;
+.project-development h3 {
+font-size: 15.7px;
+font-weight: 700;
+text-transform: uppercase;
+padding: 0;
+margin: 0;
+margin-bottom: 8px;
 }
 
 .project-development-item {
-  padding-bottom: 10px;
+  margin-bottom: 24px;
 }
 
 .project-development-item:last-child {
-  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .stats {
@@ -305,8 +348,8 @@ a.yellow:active {
   margin-right: 25px;
 }
 
-.project-development h3,
 .stats h3 {
+  font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
 }
