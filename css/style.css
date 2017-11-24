@@ -49,22 +49,38 @@ body {
 
 .main-navigation {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 1160px;
   margin-right: auto;
   margin-left: auto;
   padding-top: 50px;
+  outline: 1px solid #000;
 }
 
 .header-logo {
-  margin-right: 200px;
+  margin-right: 198px;
+  outline: 1px solid #000;
 }
 
 .site-navigation {
   display: flex;
   justify-content: space-between;
-  width: 440px;
-  margin-right: 280px;
+  align-items: center;
+  width: 450px;
+  margin-right: 284px;
+  outline: 1px solid #000;
+}
+
+.user-navigation {
+  align-self: center;
+}
+
+.main-navigation ul {
+margin-bottom: 0;
+padding-bottom: 0;
+
+
+
 }
 
 .main-navigation a {
@@ -73,6 +89,7 @@ body {
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
+
 }
 
 .main-navigation a:hover {
@@ -156,6 +173,7 @@ a.yellow:active {
   background-image: url('../img/nerds-index-slide1.png');
   background-position: right center;
   background-repeat: no-repeat;
+  outline: 1px solid #000;
 }
 
 .slide2 {
