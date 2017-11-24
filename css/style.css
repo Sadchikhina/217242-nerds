@@ -58,7 +58,7 @@ body {
 }
 
 .header-logo {
-  margin-right: 198px;
+  margin-right: 203px;
   outline: 1px solid #000;
 }
 
@@ -66,21 +66,31 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 450px;
-  margin-right: 284px;
+  width: 462px;
+  margin-right: 244px;
   outline: 1px solid #000;
 }
 
 .user-navigation {
   align-self: center;
+  position: relative;
+  outline: 1px solid #000;
+  padding-left: 40px;
+}
+
+.cart::before {
+  content: "";
+  background: url("../img/cart-icon.svg") no-repeat;
+  position: absolute;
+  top: 25%;
+  left: 0px;
+  width: 15px;
+  height: 15px;
 }
 
 .main-navigation ul {
 margin-bottom: 0;
 padding-bottom: 0;
-
-
-
 }
 
 .main-navigation a {
@@ -89,7 +99,6 @@ padding-bottom: 0;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-
 }
 
 .main-navigation a:hover {
