@@ -179,6 +179,9 @@ a.yellow:active {
   box-shadow: inset 0 3px 0 0 #ce961f;
 }
 
+.slider {
+  position: relative;
+}
 
 .slide1 {
   position: relative;
@@ -189,14 +192,12 @@ a.yellow:active {
 }
 
 .slide2 {
-  position: relative;
   background-image: url('../img/nerds-index-slide2.png');
   background-position: right center;
   background-repeat: no-repeat;
 }
 
 .slide3 {
-  position: relative;
   background-image: url('../img/nerds-index-slide3.png');
   background-position: right center;
   background-repeat: no-repeat;
@@ -210,15 +211,6 @@ a.yellow:active {
     height: 431px;
 }
 
-.slide-text::after {
-  content: "";
-  position: absolute;
-  width: 18px;
-  height: 18px;
-  background-color: #ffffff;
-  border-radius: 100%;
-}
-
 .slider-label {
   font-size: 55px;
   line-height: 55px;
@@ -229,7 +221,7 @@ a.yellow:active {
 
 .slider p {
   line-height: 24px;
-  padding-bottom: 24px;
+  padding-bottom: 23px;
   margin-left: 2px;
 }
 
@@ -240,6 +232,32 @@ a.yellow:active {
   padding-left: 54px;
   padding-top: 17px;
   border-radius: 2px;
+}
+
+.slider-pagination {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 88px;
+  bottom: 99px;
+  left: 535px;
+}
+
+.slider-pagination-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 100%;
+  background-color: #ffffff;
+}
+
+.slider-pagination-dot-active {
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
+  background-color: #ffffff;
+  border: 6px solid #ffffff;
+  box-shadow: inset 0 0 0 2px #c1c1c1;
+
 }
 
 .services {
