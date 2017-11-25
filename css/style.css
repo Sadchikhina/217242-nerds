@@ -547,7 +547,6 @@ margin-bottom: 8px;
   color: #283136;
   padding-left: 38px;
   margin-bottom: 20px;
-
 }
 
 .grid-filter p:hover,
@@ -565,7 +564,7 @@ margin-bottom: 8px;
     display: none;
 }
 
-input[type="radio"] + label::before {
+.grid-filter input[type="radio"] + label::before {
   content: "";
   width: 25px;
   height: 25px;
@@ -576,7 +575,7 @@ input[type="radio"] + label::before {
   background-repeat: no-repeat;
 }
 
-input[type="radio"]:checked + label::before {
+.grid-filter input[type="radio"]:checked + label::before {
   content: "";
   width: 25px;
   height: 25px;
@@ -587,7 +586,7 @@ input[type="radio"]:checked + label::before {
   background-repeat: no-repeat;
 }
 
-input[type="checkbox"] + label::before {
+.features-filter input[type="checkbox"] + label::before {
   content: "";
   width: 25px;
   height: 25px;
@@ -598,7 +597,7 @@ input[type="checkbox"] + label::before {
   background-repeat: no-repeat;
 }
 
-input[type="checkbox"]:checked + label::before {
+.features-filter input[type="checkbox"]:checked + label::before {
   content: "";
   width: 25px;
   height: 25px;
@@ -637,13 +636,20 @@ input[type="checkbox"]:checked + label::before {
 
 .sort {
   display: flex;
-  justify-content: space-between;
   align-items: baseline;
+}
+
+.sort .filter-label {
+  margin-right: 257px;
 }
 
 .sort-left,
 .sort-right {
   display: flex;
+}
+
+.sort-left {
+  margin-right: 9px;
 }
 
 .sort input {
@@ -655,19 +661,42 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .sort p {
+  position: relative;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   color: #ededed;
 }
 
-.sort p:hover {
+.sort-left p:hover {
   color: #a6a6a6;
 }
 
-.sort p:active,
-.sort input[type="radio"]:checked + label  {
+.sort-left p:active,
+.sort-left input[type="radio"]:checked + label  {
   color: #231f20;
+}
+
+.ascending-sort input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  bottom: 4px;
+  width: 10px;
+  height: 10px;
+  background-image: url("../img/icon-down-dir.svg");
+  background-repeat: no-repeat;
+}
+
+.descending-sort input[type="radio"] + label::before {
+  content: "";
+  position: absolute;
+  left: 39px;
+  bottom: 4px;
+  width: 10px;
+  height: 10px;
+  background-image: url("../img/icon-up-dir.svg");
+  background-repeat: no-repeat;
 }
 
 .web-templates {
