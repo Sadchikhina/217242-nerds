@@ -366,8 +366,6 @@ margin-bottom: 8px;
   margin-bottom: 0;
 }
 
-
-
 .stats {
   display: flex;
   flex-direction: column;
@@ -396,11 +394,11 @@ margin-bottom: 8px;
 
 .stats-item:first-child {
   padding-left: 24px;
-  padding-right: 9px;
+  padding-right: 19px;
 }
 
 .stats-item:nth-child(2) {
-  padding-right: 9px;
+  padding-right: 20px;
 }
 
 .stats-item p {
@@ -409,7 +407,7 @@ margin-bottom: 8px;
   font-weight: 700;
   padding: 0;
   margin: 0;
-  margin-bottom: 10px;
+  padding-bottom: 38px;
 }
 
 .percent {
