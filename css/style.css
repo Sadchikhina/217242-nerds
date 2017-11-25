@@ -345,13 +345,28 @@ margin: 0;
 margin-bottom: 8px;
 }
 
+.project-development-item::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  bottom: 11px;
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+}
+
 .project-development-item {
+  position: relative;
   margin-bottom: 24px;
+  padding-left: 36px;
+  outline: 1px solid #000;
 }
 
 .project-development-item:last-child {
   margin-bottom: 0;
 }
+
+
 
 .stats {
   display: flex;
