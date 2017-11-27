@@ -317,6 +317,7 @@ a.yellow:active {
 }
 
 .project-development {
+  width: 650px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -372,7 +373,6 @@ a.yellow:active {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 635px;
   outline: 1px solid #000;
 }
 
@@ -955,6 +955,7 @@ a.yellow:active {
   padding: 67px 92px 85px 97px;
   background-color: #ffffff;
   box-shadow: 0 20px 100px 0 #000101;
+  display: none;
 }
 
 .modal-window-header {
