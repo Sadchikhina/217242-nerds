@@ -30,12 +30,6 @@ body {
   background-color: #ececec;
 }
 
-.main-header-logo {
-  display: block;
-  padding-bottom: 0;
-  margin-right: -9px;
-}
-
 .header-logo {
   display: block;
   margin-right: 201px;
@@ -318,7 +312,7 @@ a.yellow:active {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-bottom: 58px;
+  padding-bottom: 44px;
   box-shadow: 0 2px 0 0 #eeeeee;
 }
 
@@ -441,14 +435,21 @@ a.yellow:active {
   display: flex;
   justify-content: space-between;
   box-shadow: 0 2px 0 0 #eeeeee;
+  padding-top: 2px;
+  padding-bottom: 1px;
   margin: 0;
   margin-bottom: 80px;
+}
+
+.partners-image {
+  display: block;
 }
 
 .htmlacademy,
 .borodinski,
 .pink,
 .mishka {
+  display: block;
   position: relative;
   opacity: 0.2;
 }
@@ -1045,12 +1046,7 @@ a.yellow:active {
   margin-right: 130px;
 }
 
-.social-vk,
-.social-fb,
-.social-instagram {
-  display: flex;
-  justify-content: center;
-}
+
 
 .social p {
   line-height: 22px;
@@ -1059,10 +1055,12 @@ a.yellow:active {
 }
 
 .social-list a {
+  box-sizing: border-box;
   display: flex;
   background-color: #e1e1e1;
   width: 80px;
   height: 80px;
+  padding-top: 30px;
   border-radius: 50%;
   margin-right: 10px;
   text-decoration: none;
@@ -1081,6 +1079,17 @@ a.yellow:active {
 
 .social-list a:active img {
   opacity: 0.3;
+}
+
+.social-vk,
+.social-fb,
+.social-instagram {
+  display: flex;
+  justify-content: center;
+}
+
+.social-list .social-vk {
+  padding-top: 32px;
 }
 
 .social-text {
