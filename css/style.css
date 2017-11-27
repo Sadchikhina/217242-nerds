@@ -30,6 +30,18 @@ body {
   background-color: #ececec;
 }
 
+.main-header-logo {
+  display: block;
+  padding-bottom: 0;
+  margin-right: -9px;
+}
+
+.header-logo {
+  display: block;
+  margin-right: 201px;
+  outline: 1px solid #000;
+}
+
 .main-header-logo:hover {
   opacity: 0.8;
 }
@@ -58,10 +70,7 @@ body {
   outline: 1px solid #000;
 }
 
-.header-logo {
-  margin-right: 201px;
-  outline: 1px solid #000;
-}
+
 
 .site-navigation {
   display: flex;
@@ -476,10 +485,7 @@ a.yellow:active {
   outline: 1px solid #000;
 }
 
-.main-header-logo {
-  padding: 0;
-  margin: 0;
-}
+
 
 .main-catalog {
   display: flex;
