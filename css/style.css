@@ -944,17 +944,17 @@ a.yellow:active {
 }
 
 .modal-window {
+  position: fixed;
+  bottom: 125px;
+  right: 350px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 960px;
   height: 590px;
-  padding: 75px 100px 85px 100px;
+  padding: 67px 92px 85px 97px;
   background-color: #ffffff;
   box-shadow: 0 20px 100px 0 #000101;
-  margin-left: 100px;
-  display: none;
 }
 
 .modal-window-header {
@@ -969,6 +969,7 @@ a.yellow:active {
 }
 
 .close-button {
+ align-self: center;
   background: url('../img/close-cross.svg') 50% 50% no-repeat;
   width: 20px;
   height: 20px;
@@ -981,6 +982,11 @@ a.yellow:active {
 
 .close-button:active {
   opacity: 0.1;
+}
+
+.half-width,
+.full-width {
+  width: 760px;
 }
 
 .half-width {
@@ -1006,7 +1012,7 @@ a.yellow:active {
 .full-width textarea {
   box-sizing: border-box;
   padding-left: 20px;
-  width: 760px;
+  width: 100%;
   height: 120px;
   border-radius: 5px;
   border: 2px solid #d7dcde;
@@ -1050,8 +1056,6 @@ a.yellow:active {
   display: flex;
   margin-right: 130px;
 }
-
-
 
 .social p {
   line-height: 22px;
