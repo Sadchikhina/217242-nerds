@@ -70,8 +70,6 @@ body {
   outline: 1px solid #000;
 }
 
-
-
 .site-navigation {
   display: flex;
   justify-content: space-between;
@@ -198,7 +196,6 @@ a.yellow:active {
   background-image: url('../img/nerds-index-slide1.png');
   background-position: 396px -2px;
   background-repeat: no-repeat;
-  outline: 1px solid #000;
 }
 
 .slide2 {
@@ -214,11 +211,11 @@ a.yellow:active {
 }
 
 .slide-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 550px;
-    height: 431px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 550px;
+  height: 431px;
 }
 
 .slider-label {
@@ -251,6 +248,7 @@ a.yellow:active {
   width: 88px;
   bottom: 99px;
   left: 535px;
+  cursor: pointer;
 }
 
 .slider-pagination-dot {
@@ -271,7 +269,7 @@ a.yellow:active {
 
 .services {
   display: flex;
-  justify-content: flex-start;
+  align-items: flex-start;
   flex-wrap: wrap;
   margin-top: 78px;
   margin-bottom: 42px;
@@ -380,7 +378,8 @@ a.yellow:active {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  width: 700px;
+  width: 635px;
+  outline: 1px solid #000;
 }
 
 .stats img {
@@ -400,15 +399,21 @@ a.yellow:active {
 .stats-list {
   box-sizing: border-box;
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.stats-item {
+  box-sizing: border-box;
+  padding-bottom: 15px;
 }
 
 .stats-item:first-child {
-  padding-left: 24px;
-  padding-right: 19px;
+  margin-right: 19px;
 }
 
 .stats-item:nth-child(2) {
-  padding-right: 20px;
+  margin-right: 20px;
 }
 
 .stats-item p {
@@ -484,8 +489,6 @@ a.yellow:active {
   padding-bottom: 108px;
   outline: 1px solid #000;
 }
-
-
 
 .main-catalog {
   display: flex;
@@ -643,7 +646,7 @@ a.yellow:active {
   background-repeat: no-repeat;
 }
 
-.left-column button {
+.left-column .filter-button {
   box-sizing: border-box;
   width: 260px;
   height: 50px;
@@ -651,6 +654,7 @@ a.yellow:active {
   border-radius: 2px;
   color: #000000;
   background-color: #eeeeee;
+  cursor: pointer;
 }
 
 .left-column button:hover,
@@ -693,6 +697,7 @@ a.yellow:active {
 
 .sort-left label {
   margin-right: 27px;
+  cursor: pointer;
 }
 
 .sort p {
@@ -710,6 +715,10 @@ a.yellow:active {
 .sort-left p:active,
 .sort-left input[type="radio"]:checked + label  {
   color: #231f20;
+}
+
+.sort-right label {
+  cursor: pointer;
 }
 
 .ascending-sort input[type="radio"] + label::before {
@@ -738,12 +747,14 @@ a.yellow:active {
 
 .sort-right input[type="radio"]:checked + label::before {
   opacity: 1;
+
 }
 
 .web-templates {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
 }
 
 .web-templates-item {
@@ -752,6 +763,7 @@ a.yellow:active {
   height: 616px;
   margin-bottom: 33px;
   background-color: #eeeeee;
+  cursor: pointer;
 }
 
 .template-decoration {
@@ -916,12 +928,13 @@ a.yellow:active {
   line-height: 18px;
 }
 
-.adress button {
+.adress .write-us-button {
   box-sizing: border-box;
   width: 220px;
   height: 50px;
   padding: auto;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .modal-window {
