@@ -891,28 +891,27 @@ a.yellow:active {
 
 .map-inner {
   display: flex;
+  position: relative;
 }
 
 .adress {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: flex-start;
   position: relative;
   width: 319px;
   height: 308px;
   margin-top: 55px;
   margin-bottom: 55px;
-  margin-left: 135px;
   padding-left: 50px;
   background-color: #ffffff;
 }
 
 .map-marker {
-  position: relative;
-  margin-top: 57px;
-  margin-left: 250px;
+  position: absolute;
+  top: 150px;
+  left: 758px;
 }
 
 .adress h5,
@@ -923,15 +922,21 @@ a.yellow:active {
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+  padding-top: 49px;
+  padding-bottom: 8px;
 }
 
 .adress p {
   line-height: 18px;
 }
 
+.adress .phone {
+  padding-bottom: 8px;
+}
+
 .adress .write-us-button {
   box-sizing: border-box;
-  width: 220px;
+  min-width: 220px;
   height: 50px;
   padding: auto;
   border-radius: 2px;
