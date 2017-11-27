@@ -960,6 +960,7 @@ a.yellow:active {
 .modal-window-header {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 22px;
 }
 
 .modal-window-label {
@@ -987,11 +988,13 @@ a.yellow:active {
 .half-width,
 .full-width {
   width: 760px;
+  margin-left: 1px;
 }
 
 .half-width {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 16px;
 }
 
 .half-width label,
@@ -1002,18 +1005,22 @@ a.yellow:active {
 
 .half-width input {
   box-sizing: border-box;
-  padding-left: 20px;
   width: 360px;
   height: 50px;
+  padding-left: 15px;
+  margin-top: 6px;
   border-radius: 5px;
   border: 2px solid #d7dcde;
 }
 
 .full-width textarea {
   box-sizing: border-box;
-  padding-left: 20px;
   width: 100%;
-  height: 120px;
+  height: 118px;
+  padding-top: 10px;
+  padding-left: 14px;
+  margin-top: 6px;
+  margin-bottom: 38px;
   border-radius: 5px;
   border: 2px solid #d7dcde;
 }
@@ -1023,6 +1030,7 @@ a.yellow:active {
   width: 260px;
   height: 50px;
   padding: auto;
+  margin-left: 1px;
   border-radius: 2px;
 }
 
