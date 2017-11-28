@@ -118,7 +118,10 @@ body {
 }
 
 .button,
-button {
+.write-us-button,
+.close-button,
+.send-button,
+.filter-button {
   line-height: 18px;
   font-weight: 500;
   text-transform: uppercase;
@@ -187,21 +190,18 @@ a.yellow:active {
 }
 
 .slide1 {
-  overflow: hidden;
   background-image: url('../img/nerds-index-slide1.png');
   background-position: 396px -2px;
   background-repeat: no-repeat;
 }
 
 .slide2 {
-  overflow: hidden;
   background-image: url('../img/nerds-index-slide2.png');
   background-position: 398px -2px;
   background-repeat: no-repeat;
 }
 
 .slide3 {
-  overflow: hidden;
   background-image: url('../img/nerds-index-slide3.png');
   background-position: 402px -2px;
   background-repeat: no-repeat;
@@ -749,9 +749,12 @@ a.yellow:active {
   opacity: 0.3;
 }
 
+.sort-right input[type="radio"]:hover + label::before {
+  opacity: 0.6;
+}
+
 .sort-right input[type="radio"]:checked + label::before {
   opacity: 1;
-
 }
 
 .web-templates {
@@ -810,10 +813,10 @@ a.yellow:active {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 360px;
-  height: 230px;
   position: relative;
   top: 386px;
+  width: 360px;
+  height: 230px;
   background-color: #eeeeee;
   display: none;
 }
@@ -1052,14 +1055,11 @@ a.yellow:active {
   line: none;
 }
 
-
-/* неправильные значения инпутов
 .modal-window input:invalid,
 .modal-window textarea:invalid {
   color: #e74246;
   border: 2px solid #e74246;
 }
-*/
 
 .social {
   display: flex;
