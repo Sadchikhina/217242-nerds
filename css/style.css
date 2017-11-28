@@ -775,7 +775,6 @@ a.yellow:active {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-
 }
 
 .web-templates-item {
@@ -827,10 +826,12 @@ a.yellow:active {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  position: relative;
-  top: 386px;
+  position: absolute;
+  bottom: 0;
   width: 360px;
-  height: 230px;
+  min-height: 230px;
+  max-height: 100%;
+  overflow: hidden;
   background-color: #eeeeee;
   display: none;
 }
@@ -847,6 +848,7 @@ a.yellow:active {
 .web-templates-item p {
   line-height: 18px;
   text-align: center;
+  padding: 10px;
 }
 
 .web-templates-item .button {
@@ -855,7 +857,7 @@ a.yellow:active {
   align-items: center;
   margin-bottom: 43px;
   width: 200px;
-  height: 50px;
+  min-height: 50px;
   border-radius: 2px;
 }
 
