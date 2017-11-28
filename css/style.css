@@ -187,24 +187,38 @@ a.yellow:active {
 
 .slider {
   position: relative;
+  width: 1160px;
+  height: 431px;
+  margin: auto;
 }
 
 .slide1 {
+  position: absolute;
+  width: 1160px;
+  height: 431px;
   background-image: url('../img/nerds-index-slide1.png');
   background-position: 396px -2px;
   background-repeat: no-repeat;
 }
 
 .slide2 {
+  position: absolute;
+  width: 1160px;
+  height: 431px;
   background-image: url('../img/nerds-index-slide2.png');
   background-position: 398px -2px;
   background-repeat: no-repeat;
+  visibility: hidden;
 }
 
 .slide3 {
+  position: absolute;
+  width: 1160px;
+  height: 431px;
   background-image: url('../img/nerds-index-slide3.png');
   background-position: 402px -2px;
   background-repeat: no-repeat;
+  visibility: hidden;
 }
 
 .slide-text {
