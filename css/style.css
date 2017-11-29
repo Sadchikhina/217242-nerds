@@ -973,8 +973,10 @@ a.yellow:active {
 
 .modal-window {
   position: fixed;
-  bottom: 125px;
-  right: 350px;
+  top: 50%;
+  margin-top: -295px;
+  left: 50%;
+  margin-left: -480px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -983,6 +985,7 @@ a.yellow:active {
   padding: 67px 92px 85px 97px;
   background-color: #ffffff;
   box-shadow: 0 20px 60px 0 #353535;
+  display: none;
 }
 
 .modal-window-header {
@@ -1086,6 +1089,7 @@ a.yellow:active {
   display: flex;
   box-sizing: border-box;
   padding-top: 1px;
+  margin-bottom: 70px;
 }
 
 .social-list {
