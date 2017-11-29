@@ -1050,6 +1050,7 @@ a.yellow:active {
   height: 420px;
 }
 
+
 .adress {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1062,11 +1063,14 @@ a.yellow:active {
           flex-direction: column;
   -webkit-box-align: start;
       -ms-flex-align: start;
+          align-items: flex-start;
   position: absolute;
+  top: 0;
+  left: calc((100% - 1160px)/2);
   width: 319px;
   height: 308px;
-  top: 0;
-  left: calc((100%-1160px)/2);
+  margin-top: 55px;
+  margin-bottom: 55px;
   padding-left: 50px;
   background-color: #ffffff;
 }
