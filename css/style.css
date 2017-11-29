@@ -1039,16 +1039,16 @@ a.yellow:active {
 .map {
   position: relative;
   overflow: hidden;
-  min-width: 420px;
+  min-height: 420px;
   margin-bottom: 50px;
 }
 
-.map-img {
+.interactive-map {
   position: absolute;
-  top: -70px;
-  right: 0;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: auto;
+  height: 420px;
 }
 
 .map-inner {
@@ -1078,12 +1078,6 @@ a.yellow:active {
   margin-bottom: 55px;
   padding-left: 50px;
   background-color: #ffffff;
-}
-
-.map-marker {
-  position: absolute;
-  top: 150px;
-  left: 758px;
 }
 
 .adress h5,
