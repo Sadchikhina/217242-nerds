@@ -654,6 +654,7 @@ a.yellow:active {
   border-radius: 50%;
   -webkit-box-shadow: 0 2px 0 0 #ababab;
           box-shadow: 0 2px 0 0 #ababab;
+  cursor: pointer;
 }
 
 .handle-max {
@@ -667,6 +668,7 @@ a.yellow:active {
   border-radius: 50%;
   -webkit-box-shadow: 0 2px 0 0 #ababab;
           box-shadow: 0 2px 0 0 #ababab;
+  cursor: pointer;
 }
 
 .price-filter p {
@@ -715,6 +717,11 @@ a.yellow:active {
 .grid-filter input[type="radio"],
 .features-filter input[type="checkbox"] {
     display: none;
+}
+
+.grid-filter label,
+.features-filter label {
+    cursor: pointer;
 }
 
 .grid-filter input[type="radio"] + label::before {
