@@ -138,7 +138,6 @@ body {
 }
 
 .button,
-.write-us-button,
 .close-button,
 .send-button,
 .filter-button {
@@ -153,7 +152,7 @@ body {
 
 .slider .button,
 a.red,
-.adress button,
+.adress .button,
 .modal-window button[type="submit"],
 .web-templates-item .button {
   background-color: #fb565a;
@@ -161,7 +160,7 @@ a.red,
 
 .slider .button:hover,
 a.red:hover,
-.adress button:hover,
+.adress .button:hover,
 .modal-window button[type="submit"]:hover,
 .web-templates-item .button:hover {
   background-color: #e74246;
@@ -169,7 +168,7 @@ a.red:hover,
 
 .slider .button:active,
 a.red:active,
-.adress button:active,
+.adress .button:active,
 .modal-window button[type="submit"]:active,
 .web-templates-item .button:active {
   color: #e57b7e;
@@ -1048,7 +1047,7 @@ a.yellow:active {
   position: relative;
   overflow: hidden;
   min-height: 420px;
-  margin-bottom: 50px;
+  margin-bottom: 47px;
 }
 
 .interactive-map {
@@ -1106,14 +1105,14 @@ a.yellow:active {
   padding-left: 1px;
 }
 
-.adress .write-us-button {
+.adress .button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-width: 220px;
   height: 50px;
-  padding: auto;
+  padding-top: 18px;
+  padding-left: 45px;
   border-radius: 2px;
-  cursor: pointer;
 }
 
 .modal-window {
