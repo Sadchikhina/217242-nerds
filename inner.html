@@ -243,22 +243,6 @@
         </div>
       </section>
     </footer>
-    <script>
-      var link = document.querySelector(".write-us-button");
-      var popup = document.querySelector(".modal-window");
-      var close = document.querySelector(".close-button");
-      var login = popup.querySelector("[name=yourname]");
-
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("modal-show");
-        login.focus();
-      });
-
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("modal-show");
-      });
-    </script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
