@@ -1139,6 +1139,10 @@ a.yellow:active {
   display: none;
 }
 
+.modal-show {
+  display: flex;
+}
+
 .modal-window-header {
   display: -webkit-box;
   display: -ms-flexbox;
