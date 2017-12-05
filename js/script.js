@@ -21,13 +21,7 @@ link.addEventListener("click", function (evt) {
   }
 });
 
-close.addEventListener("click", function (evt) {
-  evt.preventDefault();
-  popup.classList.remove("modal-show");
-});
-
 popup.addEventListener("submit", function (evt) {
-
   if (!yourName.value || !yourEmail.value) {
     evt.preventDefault();
     console.log("Нужно ввести логин и пароль");
@@ -36,3 +30,14 @@ popup.addEventListener("submit", function (evt) {
     localStorage.setItem("youremail", yourEmail.value);
   }
 });
+
+close.addEventListener("click", function (evt) {
+  evt.preventDefault();
+  popup.classList.remove("modal-show");
+});
+
+window.addEventListener("keydown", function (evt) {
+ if (evt.keyCode === 27) {
+ popup.classList.remove("modal-show");
+ }
+ });
