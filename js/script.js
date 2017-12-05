@@ -1,18 +1,23 @@
 var link = document.querySelector(".write-us-button");
 var popup = document.querySelector(".modal-window");
 var close = document.querySelector(".close-button");
-var yourname = popup.querySelector("[name=yourname]");
-var youremail = popup.querySelector("[name=youremail]");
-var storagename = localStorage.getItem("yourname");
-var storageemail = localStorage.getItem("youremail");
+var yourName = popup.querySelector("[name=yourname]");
+var yourEmail = popup.querySelector("[name=youremail]");
+var comment = popup.querySelector("[name=commentfield]");
+var storageName = localStorage.getItem("yourname");
+var storageEmail = localStorage.getItem("youremail");
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.add("modal-show");
-  yourname.focus();
-  if (storagename) {
-    yourname.value = storagename;
-
+  yourName.focus();
+  if (storageName) {
+    yourName.value = storageName;
+    yourEmail.focus();
+  }
+  if (storageEmail) {
+    yourEmail.value = storageEmail;
+    comment.focus();
   }
 });
 
@@ -22,10 +27,12 @@ close.addEventListener("click", function (evt) {
 });
 
 popup.addEventListener("submit", function (evt) {
-  if (!yourname.value || !youremail.value) {
-    evt.preventDefault();
-  } else {
-    localStorage.setItem("yourname", yourname.value);
 
+  if (!yourName.value || !yourEmail.value) {
+    evt.preventDefault();
+    console.log("Нужно ввести логин и пароль");
+  } else {
+    localStorage.setItem("yourname", yourName.value);
+    localStorage.setItem("youremail", yourEmail.value);
   }
 });
