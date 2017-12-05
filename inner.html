@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <meta name="keywords" content="">
     <meta name="description" content="">
@@ -206,7 +206,7 @@
           <h5>Nёrd's design studio</h5>
           <p>191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8</p>
           <span class="phone" aria-label="Телефон">тел. +7(812)275-75-75</span><br>
-          <a class="button" href="form.html" aria-label="Напишите нам">Напишите нам</a>
+          <button class="write-us-button" aria-label="Напишите нам">Напишите нам</button>
         </div>
       </section>
       <form class="modal-window" action="index.html" method="post">
@@ -243,5 +243,20 @@
         </div>
       </section>
     </footer>
+    <script>
+      var link = document.querySelector(".write-us-button");
+      var popup = document.querySelector(".modal-window");
+      var close = document.querySelector(".close-button");
+
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+      });
+
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+      });
+    </script>
   </body>
 </html>

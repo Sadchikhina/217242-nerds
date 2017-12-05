@@ -138,6 +138,7 @@ body {
 }
 
 .button,
+.write-us-button,
 .close-button,
 .send-button,
 .filter-button {
@@ -152,7 +153,7 @@ body {
 
 .slider .button,
 a.red,
-.adress .button,
+.write-us-button,
 .modal-window button[type="submit"],
 .web-templates-item .button {
   background-color: #fb565a;
@@ -168,7 +169,7 @@ a.red:hover,
 
 .slider .button:active,
 a.red:active,
-.adress .button:active,
+.write-us-button:active,
 .modal-window button[type="submit"]:active,
 .web-templates-item .button:active {
   color: #e57b7e;
@@ -1105,14 +1106,14 @@ a.yellow:active {
   padding-left: 1px;
 }
 
-.adress .button {
+.write-us-button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-width: 220px;
   height: 50px;
-  padding-top: 18px;
-  padding-left: 45px;
+  padding: auto;
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .modal-window {
