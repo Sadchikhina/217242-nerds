@@ -153,16 +153,35 @@
           var link = document.querySelector(".write-us-button");
           var popup = document.querySelector(".modal-window");
           var close = document.querySelector(".close-button");
+          var form = popup.querySelector("form");
+          var yourname = popup.querySelector("[name=yourname]");
+          var youremail = popup.querySelector("[name=youremail]");
+          var storagename = localStorage.getItem("yourname");
+          var storageemail = localStorage.getItem("youremail");
+
 
           link.addEventListener("click", function (evt) {
             evt.preventDefault();
             popup.classList.add("modal-show");
-            login.focus();
+            yourname.focus();
+            if (storage) {
+              yourname.value = storagename;
+
+            }
           });
 
           close.addEventListener("click", function (evt) {
             evt.preventDefault();
             popup.classList.remove("modal-show");
+          });
+
+          form.addEventListener("submit", function (evt) {
+            if (!yourname.value || !youremail.value) {
+              evt.preventDefault();
+            } else {
+              localStorage.setItem("yourname", yourname.value);
+
+            }
           });
         </script>
       </body>
